@@ -2,7 +2,7 @@ var BaseDao = require('./lib/BaseDaoClass');
 	
 var baseDao = new BaseDao();
 
-// baseDao.getConnection();
+// baseDao.setConnection();
 
 baseDao.getTable();
 

@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>法院公告</title>
+
+		<link rel="stylesheet" type="text/css" href="inc/css/author_list.css" />
+		<link rel="stylesheet" type="text/css" href="inc/css/author_more.css" />
+		<script type="text/javascript" src="initJson.js"></script>
+		<style>
+			.selectOn {
+				background: #beebff;
+			}
+			
+			#list_right_title_1 {
+				width: 350px;
+				text-align: center;
+			}
+			
+			#list_right_title_2 {
+				width: 150px;
+				text-align: center;
+			}
+			
+			.list_right_sub_1 {
+				width: 350px;
+			}
+			
+			.list_right_sub_2 {
+				width: 150px;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<center>
+			<table width="1002" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<img src="img/author_index/header1.png" width="1002" height="120" />
+					</td>
+				</tr>
+				<tr>
+					<td height="30" background="img/author_index/bg_menu.png"
+						class="crumbs">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当前位置：
+						<a href=".">广东法院网</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="main">
+
+							<div id="list_left">
+								<div id="left_title"></div>
+								<!--End #rule_title -->
+								<div id="list_left_box" style='height: 150px'>
+									<table width='95%' border='0' align='center' cellpadding='0'
+										cellspacing='0' class='pier'>
+										<form id='BulletinForm' method='get'
+											action='/gdcourt/front/bulletin.action'>
+										<tr>
+											<td height='10' colspan='2'></td>
+										</tr>
+										<tr>
+											<td colspan='2'>
+												<strong>公告类型：</strong>
+												<select name='filter_EQI_type'
+													value='' type='text'
+													id='filter_EQI_type' style='width: 123px'><option value=>请选择...</option>
+<option value=2 >开庭公告</option>
+<option value=3 >拍卖公告</option>
+<option value=4 >送达公告</option>
+<option value=5 >催示公告</option>
+<option value=6 >听证公告</option>
+<option value=8 >其他公告</option>
+</select>
+											</td>
+										</tr>
+										<tr>
+											<td height='30' colspan='2'>
+												<strong>公告标题：</strong>
+												<input name='filter_LIKES_title' value='' type='text' id='filter_LIKES_title'
+													size='15' style='border: 1px solid #9e9e9e; height: 13px;' />
+											</td>
+										</tr>
+										<tr>
+											<td height='30' colspan='2'>
+												<strong>公告内容：</strong>
+												<input name='filter_LIKES_content' value='' type='text'
+													id='filter_LIKES_content' size='15'
+													style='border: 1px solid #9e9e9e; height: 13px;' />
+											</td>
+										</tr>
+										<tr>
+											<td width='50%' align='center'>
+												<img src='/gdcourt/front/sfgk/images/c_x.gif' width='81'
+													height='31' onclick='BulletinControl.search()' />
+											</td>
+											<td width='50%' align='center'>
+												<img src='/gdcourt/front/sfgk/images/c_z.gif' width='81'
+													height='31' onclick='BulletinControl.reset()' />
+											</td>
+										</tr>
+										</form>
+									</table>
+								</div>
+								<!--End #list_left_box -->
+
+							</div>
+							<!--End #list_left -->
+
+							<div id="list_right">
+								<form id="mainForm" action="bulletin!list.action" method="get">
+									<input type="hidden" name="page.pageNo" id="pageNo"
+										value="1" />
+									<input type="hidden" name="page.orderBy" id="orderBy"
+										value="pub_time" />
+									<input type="hidden" name="page.order" id="order"
+										value="desc" />
+									<input type="hidden" name="filter_EQI_type"
+										id="filter_EQI_type" value="" />
+									<input type="hidden" name="filter_LIKES_title"
+										id="filter_LIKES_title" value="" />
+									<input type="hidden" name="filter_LIKES_content"
+										id="filter_LIKES_content"
+										value="" />
+									<div id="list_right_title">
+										<div id="list_right_title_1">
+											<a href="javascript:sort('bt','asc')">开庭公告</a>
+										</div>
+										<div id="list_right_title_2">
+											<a href="javascript:sort('zz','asc')">开庭时间</a>
+										</div>
+										<div id="list_right_title_2">
+											<a href="javascript:sort('zz','asc')">发布时间</a>
+										</div>
+									</div>
+									<!--End #list_right_title-->
+									<!--列表：表头-->
+									<div id="list_right_box">
+										
+											<div class="list_right_sub">
+												<div class="list_right_sub_1">
+													<a
+														href="javascript:showDetail('bulletin!detailjson.action?id=45118','main_detail','main')"
+														title='（2014）粤高法民一终字第7号'> （2014）粤高法民一终字第7号
+													</a>
+												</div>
+												<div class="list_right_sub_2">
+													2014-02-20 08:50
+												</div>
+												<div class="list_right_sub_2">
+													2014-01-26 08:19
+												</div>
+											</div>
+											<!--End #list_right_sub-->
+											<!--列表：内容-->
+										
+											<div class="list_right_sub">
+												<div class="list_right_sub_1">
+													<a
+														href="javascript:showDetail('bulletin!detailjson.action?id=45119','main_detail','main')"
+														title='（2014）粤高法民一终字第8号'> （2014）粤高法民一终字第8号
+													</a>
+												</div>
+												<div class="list_right_sub_2">
+													2014-02-21 02:30
+												</div>
+												<div class="list_right_sub_2">
+													2014-01-26 08:19
+												</div>
+											</div>
+											<!--End #list_right_sub-->
+											<!--列表：内容-->
+										
+											<div class="list_right_sub">
+												<div class="list_right_sub_1">
+													<a
+														href="javascript:showDetail('bulletin!detailjson.action?id=45120','main_detail','main')"
+														title='（2014）粤高法民二终字第8号'> （2014）粤高法民二终字第8号
+													</a>
+												</div>
+												<div class="list_right_sub_2">
+													2014-02-21 08:50
+												</div>
+												<div class="list_right_sub_2">
+													2014-01-26 08:19
+												</div>
+											</div>
+											<!--End #list_right_sub-->
+											<!--列表：内容-->
+										
+											<div class="list_right_sub">
+												<div class="list_right_sub_1">
+													<a
+														href="javascript:showDetail('bulletin!detailjson.action?id=45121','main_detail','main')"
+														title='（2014）粤高法民三终字第97号'> （2014）粤高法民三终字第97号
+													</a>
+												</div>
+												<div class="list_right_sub_2">
+													2014-02-21 02:30
+												</div>
+												<div class="list_right_sub_2">
+													2014-01-26 08:19
+												</div>
+											</div>
+											<!--End #list_right_sub-->
+											<!--列表：内容-->
+										
+											<div class="list_right_sub">
+												<div class="list_right_sub_1">
+													<a
+														href="javascript:showDetail('bulletin!detailjson.action?id=45122','main_detail','main')"
+														title='（2014）粤高法民三终字第98号'> （2014）粤高法民三终字第98号
+													</a>
+												</div>
+												<div class="list_right_sub_2">
+													2014-02-24 08:50
+												</div>
+												<div class="list_right_sub_2">
+													2014-01-26 08:19
+												</div>
+											</div>
+											<!--End #list_right_sub-->
+											<!--列表：内容-->
+										
+											<div class="list_right_sub">
+												<div class="list_right_sub_1">
+													<a
+														href="javascript:showDetail('bulletin!detailjson.action?id=45123','main_detail','main')"
+														title='（2014）粤高法民三终字第100号'> （2014）粤高法民三终字第100号
+													</a>
+												</div>
+												<div class="list_right_sub_2">
+													2014-02-21 08:50
+												</div>
+												<div class="list_right_sub_2">
+													2014-01-26 08:19
+												</div>
+											</div>
+											<!--End #list_right_sub-->
+											<!--列表：内容-->
+										
+											<div class="list_right_sub">
+												<div class="list_right_sub_1">
+													<a
+														href="javascript:showDetail('bulletin!detailjson.action?id=45124','main_detail','main')"
+														title='（2014）粤高法民三终字第101号'> （2014）粤高法民三终字第101号
+													</a>
+												</div>
+												<div class="list_right_sub_2">
+													2014-02-24 02:30
+												</div>
+												<div class="list_right_sub_2">
+													2014-01-26 08:19
+												</div>
+											</div>
+											<!--End #list_right_sub-->
+											<!--列表：内容-->
+										
+											<div class="list_right_sub">
+												<div class="list_right_sub_1">
+													<a
+														href="javascript:showDetail('bulletin!detailjson.action?id=45125','main_detail','main')"
+														title='（2014）粤高法民三终字第103号'> （2014）粤高法民三终字第103号
+													</a>
+												</div>
+												<div class="list_right_sub_2">
+													2014-02-26 08:50
+												</div>
+												<div class="list_right_sub_2">
+													2014-01-26 08:19
+												</div>
+											</div>
+											<!--End #list_right_sub-->
+											<!--列表：内容-->
+										
+											<div class="list_right_sub">
+												<div class="list_right_sub_1">
+													<a
+														href="javascript:showDetail('bulletin!detailjson.action?id=45126','main_detail','main')"
+														title='（2014）粤高法民三终字第104号'> （2014）粤高法民三终字第104号
+													</a>
+												</div>
+												<div class="list_right_sub_2">
+													2014-02-25 08:50
+												</div>
+												<div class="list_right_sub_2">
+													2014-01-26 08:19
+												</div>
+											</div>
+											<!--End #list_right_sub-->
+											<!--列表：内容-->
+										
+											<div class="list_right_sub">
+												<div class="list_right_sub_1">
+													<a
+														href="javascript:showDetail('bulletin!detailjson.action?id=45127','main_detail','main')"
+														title='（2014）粤高法民三终字第105号'> （2014）粤高法民三终字第105号
+													</a>
+												</div>
+												<div class="list_right_sub_2">
+													2014-02-21 02:30
+												</div>
+												<div class="list_right_sub_2">
+													2014-01-26 08:19
+												</div>
+											</div>
+											<!--End #list_right_sub-->
+											<!--列表：内容-->
+										
+											<div class="list_right_sub">
+												<div class="list_right_sub_1">
+													<a
+														href="javascript:showDetail('bulletin!detailjson.action?id=45128','main_detail','main')"
+														title='（2014）粤高法民三终字第106号'> （2014）粤高法民三终字第106号
+													</a>
+												</div>
+												<div class="list_right_sub_2">
+													2014-02-24 08:50
+												</div>
+												<div class="list_right_sub_2">
+													2014-01-26 08:19
+												</div>
+											</div>
+											<!--End #list_right_sub-->
+											<!--列表：内容-->
+										
+											<div class="list_right_sub">
+												<div class="list_right_sub_1">
+													<a
+														href="javascript:showDetail('bulletin!detailjson.action?id=45129','main_detail','main')"
+														title='（2014）粤高法民三终字第107号'> （2014）粤高法民三终字第107号
+													</a>
+												</div>
+												<div class="list_right_sub_2">
+													2014-02-25 02:30
+												</div>
+												<div class="list_right_sub_2">
+													2014-01-26 08:19
+												</div>
+											</div>
+											<!--End #list_right_sub-->
+											<!--列表：内容-->
+										
+											<div class="list_right_sub">
+												<div class="list_right_sub_1">
+													<a
+														href="javascript:showDetail('bulletin!detailjson.action?id=45130','main_detail','main')"
+														title='（2014）粤高法民三终字第108号'> （2014）粤高法民三终字第108号
+													</a>
+												</div>
+												<div class="list_right_sub_2">
+													2014-02-27 08:50
+												</div>
+												<div class="list_right_sub_2">
+													2014-01-26 08:19
+												</div>
+											</div>
+											<!--End #list_right_sub-->
+											<!--列表：内容-->
+										
+											<div class="list_right_sub">
+												<div class="list_right_sub_1">
+													<a
+														href="javascript:showDetail('bulletin!detailjson.action?id=45131','main_detail','main')"
+														title='（2014）粤高法民三终字第110号'> （2014）粤高法民三终字第110号
+													</a>
+												</div>
+												<div class="list_right_sub_2">
+													2014-02-27 02:30
+												</div>
+												<div class="list_right_sub_2">
+													2014-01-26 08:19
+												</div>
+											</div>
+											<!--End #list_right_sub-->
+											<!--列表：内容-->
+										
+											<div class="list_right_sub">
+												<div class="list_right_sub_1">
+													<a
+														href="javascript:showDetail('bulletin!detailjson.action?id=45132','main_detail','main')"
+														title='（2014）粤高法民三终字第111号'> （2014）粤高法民三终字第111号
+													</a>
+												</div>
+												<div class="list_right_sub_2">
+													2014-02-26 08:50
+												</div>
+												<div class="list_right_sub_2">
+													2014-01-26 08:19
+												</div>
+											</div>
+											<!--End #list_right_sub-->
+											<!--列表：内容-->
+										
+										<div id="list_right_page">
+											第1页, 共2003页,共30044条
+											<a href="javascript:jumpPage(1)">首页</a>
+											
+											
+												<a href="javascript:jumpPage(2)">下一页</a>
+											
+											<a href="javascript:jumpPage(2003)">末页</a>
+										</div>
+										<!--End #search_list_page -->
+									</div>
+									<!--End #list_right_box -->
+								</form>
+							</div>
+							<!--End #list_right -->
+
+						</div>
+						<!--End #main -->
+						<div id="main_detail" style="display: none">
+							<div id="more_title1"><a href='javascript:changeTolist("main","main_detail")'><img src='img/return.png' height='25'/></a></div>
+							<!--End #more_title1 -->
+							<!--
+							<div id="more_title2">
+								<span id="bulletin.bt"></span>
+							</div>
+								End #more_title2
+							 -->
+							<!--<div id="more_title3">——记某某事件（附标题）</div>End #more_title3 -->
+							<div id="more_title4"></div>
+							<!--End #more_title4 -->
+							<div id="more_word">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<span id="bulletin.content"></span>
+							</div>
+							<!--End #more_word -->
+						</div>
+						<!--End #main_detail -->
+					</td>
+
+				</tr>
+				<tr>
+					<td height="21" bordercolor="1">
+						&nbsp;
+					</td>
+				</tr>
+				<tr>
+					<td bordercolor="1">
+						<div align="center">
+							版权所有 广东省高级人民法院 | 未经书面协议授权禁止下载试用或建立镜像
+							<br />
+							ICP备案号：
+							<a href="#">粤ICP备06101287号</a> 经营许可证证书
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td height="50" bordercolor="1">
+						&nbsp;
+					</td>
+				</tr>
+
+			</table>
+
+		</center>
+	</body>
+</html>
